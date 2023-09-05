@@ -7,6 +7,7 @@
  * @author Ryan Bankert
  * Class: MIST352-Fall23
  * HW#1A
+ * 
  */
 // Changed HW11 to HW1 as the name of the class should reflect the class name
 public class HW1 {
