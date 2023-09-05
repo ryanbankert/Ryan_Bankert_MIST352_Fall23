@@ -4,6 +4,9 @@
 
 /**
  * 
+ * @author Ryan Bankert
+ * Class: MIST352-Fall23
+ * HW#1B
  */
 public class HW1B {
 
