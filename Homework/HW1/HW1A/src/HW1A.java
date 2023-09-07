@@ -12,7 +12,7 @@
 // Changed HW11 to HW1A as the name of the class should reflect the class name
 public class HW1A {
 	public static void main(String[] args) {
-		// Changed from Hi for personal flair
+		// Greets user
 		System.out.println("Hello!");
 		// removed char A as it was not needed
 		// changed 10 to 20
@@ -21,7 +21,7 @@ public class HW1A {
 		double num2 = 10.1;
 		// below was an int instead of a double as int can only be used for integers
 		double sum = num1 + num2;
-		
+		// displays the sum that is calculated from below
 		System.out.println("Sum: " + sum);
 	}
 
