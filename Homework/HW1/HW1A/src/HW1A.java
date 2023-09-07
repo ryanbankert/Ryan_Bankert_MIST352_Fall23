@@ -14,7 +14,7 @@ public class HW1A {
 	public static void main(String[] args) {
 		// Changed from Hi for personal flair
 		System.out.println("Hello!");
-		char A;
+		// removed char A as it was not needed
 		// changed 10 to 20
 		int num1 =20;
 		// changed 5.5 to 10.1
