@@ -14,10 +14,14 @@ import java.util.Scanner;
 	        System.out.print("Enter the string to search within: ");
 	        String userInput = scanner.nextLine();
 
-	        // Ask user for a character to find in the input
+	        
+	        // Says character instead of letter, terminology was different
+	          // Ask user for a character to find in the input
 	        System.out.print("Enter a character to find its first occurrence: ");
+	       
 	        char charToFind = scanner.nextLine().charAt(0);
 
+	       // Their code starts at 0 and counts up the characters, which gives incorrect results
 	        // Find the location of the first occurrence of the character
 	        int location = userInput.indexOf(charToFind);
 
