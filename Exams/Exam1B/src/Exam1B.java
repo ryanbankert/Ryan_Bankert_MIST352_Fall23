@@ -43,8 +43,12 @@ public class Exam1B {
 		int LetPos = message.indexOf(LetAT) +1;
 		
 		// Outputs results
-		System.out.println("The first occurance of "+ LetAT + " is at the position of: " + LetPos + ".");
-		
+		//System.out.println(LetPos);
+		if(LetPos >0) {
+		   System.out.println("The first occurance of "+ LetAT + " is at the position of: " + LetPos + ".");
+		} else {
+			System.out.println("The character you entered is not in the message");
+		}
 		//Closes the Scanner
 		keyboard.close();
 	}
