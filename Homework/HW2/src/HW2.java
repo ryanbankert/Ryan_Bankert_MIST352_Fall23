@@ -172,70 +172,70 @@ public void setCurrentEnrollment(int currentEnrollment) {
  }
 }
 
-// Main class for the program
+// Main class for the code
 public class HW2 {
  public static void main(String[] args) {
      // Create instances of Course, Student, and TestScores
-     Course mist352 = new Course();
-     Course cs101 = new Course();
-     Student ashley = new Student();
-     Student ali = new Student();
+     Course MIST352 = new Course();
+     Course CS101 = new Course();
+     Student Ashley = new Student();
+     Student Ali = new Student();
 
-     // Enroll Ashley Jaber in MIST352 and print details
-     System.out.println("Enrolling Ashley Jaber in MIST352 successful: " + mist352.enroll1Student());
-     System.out.println("Current enrollment: " + mist352.getCurrentEnrollment());
+     // Enroll Ashley Jaber for their classes and confirm enrollment
+     System.out.println("Enrolling Ashley Jaber in MIST352 successful: " + MIST352.enroll1Student());
+     System.out.println("Current enrollment: " + MIST352.getCurrentEnrollment());
 
      // Set course details for MIST352
-     mist352.setCourseCode("MIST352");
-     mist352.setCourseTitle("MIST352 Title");
-     mist352.setInstructorName("Instructor Name");
+     MIST352.setCourseCode("MIST352");
+     MIST352.setCourseTitle("MIST352 Title");
+     MIST352.setInstructorName("Instructor Name");
 
      // Set test scores for MIST352 and calculate average GPA
-     TestScores mist352Grades = new TestScores(78, 75, 90);
-     mist352Grades.setScore1(78);
-     mist352Grades.setScore2(90);
-     mist352Grades.setScore3(75);
+     TestScores MIST352Grades = new TestScores(78, 75, 90);
+     MIST352Grades.setScore1(78);
+     MIST352Grades.setScore2(90);
+     MIST352Grades.setScore3(75);
 
-     System.out.println("The current GPA is: " + mist352Grades.getAverageScore());
+     System.out.println("The current GPA is: " + MIST352Grades.getAverageScore());
 
      
-     System.out.println("Enrolling Ashley Jaber in CS101 successful: " + cs101.enroll1Student());
-     System.out.println("Current enrollment: " + cs101.getCurrentEnrollment());
+     System.out.println("Enrolling Ashley Jaber in CS101 successful: " + CS101.enroll1Student());
+     System.out.println("Current enrollment: " + CS101.getCurrentEnrollment());
 
      // Set course details for CS101
-     cs101.setCourseCode("CS101");
-     cs101.setCourseTitle("CS101 Title");
-     cs101.setInstructorName("Instructor Name");
+     CS101.setCourseCode("CS101");
+     CS101.setCourseTitle("CS101 Title");
+     CS101.setInstructorName("Instructor Name");
 
      // Set test scores for CS101 and calculate average GPA
-     TestScores cs101Grades = new TestScores(85, 90, 75);
-     cs101Grades.setScore1(85);
-     cs101Grades.setScore2(90);
-     cs101Grades.setScore3(75);
+     TestScores CS101Grades = new TestScores(85, 90, 75);
+     CS101Grades.setScore1(85);
+     CS101Grades.setScore2(90);
+     CS101Grades.setScore3(75);
 
-     System.out.println("The current GPA is: " + cs101Grades.getAverageScore());
+     System.out.println("The current GPA is: " + CS101Grades.getAverageScore());
 
      
-     System.out.println("Enrolling Ali June in MIST352: " + mist352.enroll1Student());
-     System.out.println("Enrolling Ali June in CS101: " + cs101.enroll1Student());
+     System.out.println("Enrolling Ali June in MIST352: " + MIST352.enroll1Student());
+     System.out.println("Enrolling Ali June in CS101: " + CS101.enroll1Student());
 
      //Compare GPA
-     double mist352GPA = mist352Grades.getAverageScore();
-     double cs101GPA = cs101Grades.getAverageScore();
+     double MIST352GPA = MIST352Grades.getAverageScore();
+     double CS101GPA = CS101Grades.getAverageScore();
 
-     if (mist352GPA > cs101GPA) {
+     if (MIST352GPA > CS101GPA) {
          System.out.println("Ashley's GPA in MIST352 is greater than in CS101.");
-     } else if (cs101GPA > mist352GPA) {
+     } else if (CS101GPA > MIST352GPA) {
          System.out.println("Ashley's GPA in CS101 is greater than in MIST352.");
      } else {
          System.out.println("Ashley's GPA is the same in both courses.");
      }
 
-
-     System.out.println("Enrolling Ali June in MIST352: " + mist352.enroll1Student());
-     System.out.println("Enrolling Ali June in CS101: " + cs101.enroll1Student());
+     // Enroll Ali June in their classes and confirm enrollment
+     System.out.println("Enrolling Ali June in MIST352: " + MIST352.enroll1Student());
+     System.out.println("Enrolling Ali June in CS101: " + CS101.enroll1Student());
 
    
-     System.out.println("Ali can't be enrolled because both courses are at maximum capacity.");
+     System.out.println("The class is full, therefore Ali cannot be enrolled.");
  }
 }
